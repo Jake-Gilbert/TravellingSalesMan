@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -22,8 +20,15 @@ public class Main {
     }
 
 
-        //Populates the graph with cities taken from the CSV file
-        private static void populateMap() {
+    //Populates the graph with cities taken from the CSV file
+    private static void populateMap() {
+        FileReader fileReader = new FileReader();
+        cities = fileReader.populateMap();
+    }
 
-     }
+
+}
+
+
+
 
