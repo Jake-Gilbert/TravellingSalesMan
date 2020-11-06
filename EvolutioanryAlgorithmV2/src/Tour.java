@@ -9,22 +9,23 @@ public class Tour {
 
     public Tour() {
     }
-    public ArrayList<Integer> generateRoute(int length) {
+    public Integer[] generateRoute(int length) {
 
         ArrayList<Integer> tour = new ArrayList<>(length);
-        for (int i = 1; i < length; i++) {
+        for (int i = 0; i < length - 1; i++) {
             tour.add(i);
         }
         Collections.shuffle(tour);
         tour.add(tour.size(), tour.get(0));
-        return tour;
+        Integer[] temp = new Integer[length];
+        return tour.toArray(temp);
     }
 
 
-    public double getCostOfRoute(Map<Integer, City> cityMap, ArrayList<Integer> route) {
+    public double getCostOfRoute(Map<Integer, City> cityMap, Integer[] route) {
         double total = 0.0;
-        for (int i = 0; i < route.size() - 1; i++) {
-            total += difference(cityMap, route.get(i), route.get(i + 1));
+        for (int i = 0; i < route.length - 1; i++) {
+            total += difference(cityMap, route[i], route[i+1]);
         }
         BigDecimal bd = new BigDecimal(total);
         bd = bd.round(new MathContext(3));
