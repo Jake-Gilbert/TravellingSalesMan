@@ -1,17 +1,19 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Main {
     static Map<Integer, City> cities = new HashMap<>();
     static Random random = new Random();
-
+    static Tour tour = new Tour();
     public static void main(String[] args) {
         populateMap();
-        Population population = new Population(100);
-        ParentSelection parentSelection = new ParentSelection(population.getPopulation(), 10, cities);
+        Population population = new Population(100, 17);
 
 
+        for (int i = 0; i < 25; i++) {
+            ParentSelection parentSelection = new ParentSelection(population.getPopulation(), 5, cities);
+            ArrayList<Integer[]> parents = parentSelection.getParents();
+            Recombination recombination = new Recombination(parents.get(0), parents.get(1));
+        }
     }
 
 

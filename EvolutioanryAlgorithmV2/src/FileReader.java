@@ -18,7 +18,7 @@ public class FileReader {
                 String[] coordinates = line.split(",");
 
                 if (coordinates[0].matches("\\d+") && coordinates.length == 3) {
-                    int cityIndex = Integer.parseInt(coordinates[0]);
+                    int cityIndex = Integer.parseInt(coordinates[0]) - 1;
                     tempMap.put(cityIndex, new City(Double.parseDouble(coordinates[1]), Double.parseDouble(coordinates[2])));
                 }
 
