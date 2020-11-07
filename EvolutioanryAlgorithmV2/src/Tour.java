@@ -5,27 +5,27 @@ import java.util.Collections;
 import java.util.Map;
 
 public class Tour {
-    int length;
-
-    public Tour() {
+    public Integer[] tour;
+    public Tour(int tourLength) {
+        generateTour(tourLength);
     }
-    public Integer[] generateRoute(int length) {
+    private void generateTour(int tourLength) {
 
-        ArrayList<Integer> tour = new ArrayList<>(length);
-        for (int i = 0; i < length - 1; i++) {
+        ArrayList<Integer> tour = new ArrayList<>(tourLength);
+        for (int i = 0; i < tourLength - 1; i++) {
             tour.add(i);
         }
         Collections.shuffle(tour);
         tour.add(tour.size(), tour.get(0));
-        Integer[] temp = new Integer[length];
-        return tour.toArray(temp);
+        Integer[] temp = new Integer[tourLength];
+        this.tour  = tour.toArray(temp);
     }
 
 
-    public double getCostOfRoute(Map<Integer, City> cityMap, Integer[] route) {
+    public double getCostOfRoute(Map<Integer, City> cityMap) {
         double total = 0.0;
-        for (int i = 0; i < route.length - 1; i++) {
-            total += difference(cityMap, route[i], route[i+1]);
+        for (int i = 0; i < tour.length - 1; i++) {
+            total += difference(cityMap, tour[i], tour[i+1]);
         }
         BigDecimal bd = new BigDecimal(total);
         bd = bd.round(new MathContext(3));
