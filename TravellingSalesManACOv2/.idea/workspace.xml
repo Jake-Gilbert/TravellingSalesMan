@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b584d4bc-b4b4-427b-9658-a6bb5c57202f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TravellingSalesManACOv2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ACO/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/Recombination.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/Recombination.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/Recombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/Recombination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pheromone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pheromone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/Ant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/Pheromone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/Ant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pheromone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/Pheromone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +39,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CS/CS3910/TravellingSalesmanProblemACO" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16205534" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -47,9 +51,16 @@
       <recent name="C:\Users\Jake\Documents\repos\TravellingSalesMan\TravellingSalesManACOv2\out\production\TravellingSalesManACOv2" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="com.ACO.Main" />
+      <module name="TravellingSalesManACOv2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ACO.Main" />
       <module name="TravellingSalesManACOv2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -84,50 +96,58 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="342" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1604816452603" />
-    <state x="505" y="303" width="1092" height="813" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604817115934">
+    <state x="505" y="303" width="1092" height="813" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604843520615">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="505" y="303" width="1092" height="813" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604817115934" />
-    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1604816552936">
+    <state x="505" y="303" width="1092" height="813" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604843520615" />
+    <state x="621" y="490" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604872560295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604816552936" />
-    <state width="2517" height="437" key="GridCell.Tab.0.bottom" timestamp="1604816604673">
+    <state x="621" y="490" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604872560295" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1604843852143">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="437" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604816604673" />
-    <state width="2517" height="437" key="GridCell.Tab.0.center" timestamp="1604816604672">
+    <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604843852143" />
+    <state width="2517" height="457" key="GridCell.Tab.0.bottom" timestamp="1604875757912">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="437" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604816604672" />
-    <state width="2517" height="437" key="GridCell.Tab.0.left" timestamp="1604816604672">
+    <state width="2517" height="457" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
+    <state width="2517" height="457" key="GridCell.Tab.0.center" timestamp="1604875757912">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="437" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604816604672" />
-    <state width="2517" height="437" key="GridCell.Tab.0.right" timestamp="1604816604673">
+    <state width="2517" height="457" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
+    <state width="2517" height="457" key="GridCell.Tab.0.left" timestamp="1604875757912">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="437" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604816604673" />
-    <state width="1434" height="491" key="GridCell.Tab.1.bottom" timestamp="1604816572497">
+    <state width="2517" height="457" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
+    <state width="2517" height="457" key="GridCell.Tab.0.right" timestamp="1604875757912">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1434" height="491" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604816572497" />
-    <state width="1434" height="491" key="GridCell.Tab.1.center" timestamp="1604816572496">
+    <state width="2517" height="457" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
+    <state width="2517" height="500" key="GridCell.Tab.1.bottom" timestamp="1604875712614">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1434" height="491" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604816572496" />
-    <state width="1434" height="491" key="GridCell.Tab.1.left" timestamp="1604816572496">
+    <state width="2517" height="500" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
+    <state width="2517" height="500" key="GridCell.Tab.1.center" timestamp="1604875712614">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1434" height="491" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604816572496" />
-    <state width="1434" height="491" key="GridCell.Tab.1.right" timestamp="1604816572497">
+    <state width="2517" height="500" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
+    <state width="2517" height="500" key="GridCell.Tab.1.left" timestamp="1604875712614">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1434" height="491" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604816572497" />
+    <state width="2517" height="500" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
+    <state width="2517" height="500" key="GridCell.Tab.1.right" timestamp="1604875712614">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="500" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
     <state x="473" y="342" key="SettingsEditor" timestamp="1604816561455">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604816561455" />
+    <state x="662" y="320" key="new project wizard" timestamp="1604843853262">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="662" y="320" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1604843853262" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TravellingSalesManACOv2$Main.ic" NAME="Main Coverage Results" MODIFIED="1604816572437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
