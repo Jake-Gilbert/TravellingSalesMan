@@ -27,7 +27,7 @@ public class Main {
 
             ParentSelection parentSelection = new ParentSelection(population.population, 5, cities);
             ArrayList<Tour> parents = parentSelection.getParents();
-            Recombination recombination = new Recombination(parents.get(0), parents.get(1));
+            Recombination recombination = new Recombination(parents.get(0), parents.get(1), cities);
             newGenerationTour.add(recombination.offsprings.get(0));
             newGenerationTour.add(recombination.offsprings.get(1));
         }
