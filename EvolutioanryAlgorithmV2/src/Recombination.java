@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Recombination {
 
     public ArrayList<Tour> offsprings;
-    public Recombination(Tour parentOne, Tour parentTwo) {
+    public Recombination(Tour parentOne, Tour parentTwo, Map<Integer, City> cities) {
         offsprings = new ArrayList<>();
         int startCityP1 = parentOne.tour[0];
         int startCityP2 = parentTwo.tour[0];
@@ -27,8 +28,20 @@ public class Recombination {
         offspring = takeFromTheOtherParent(offspring, modifiedP2, spliceEnd, spliceStart, startCityP2, startCityP1);
         offspring2 = takeFromTheOtherParent(offspring2, modifiedP1, spliceEnd, spliceStart, startCityP1, startCityP2);
 
-        offsprings.add(offspring);
-        offsprings.add(offspring2);
+        routeWithRandomMutation(offspring);
+        routeWithRandomMutation(offspring2);
+        if (offspring.getCostOfRoute(cities) > parentOne.getCostOfRoute(cities)) {
+            offsprings.add(parentOne);
+        }
+        else {
+            offsprings.add(offspring);
+        }
+        if (offspring2.getCostOfRoute(cities) > parentTwo.getCostOfRoute(cities)) {
+            offsprings.add(parentTwo);
+        }
+        else {
+            offsprings.add(offspring2);
+        }
 
     }
 
@@ -83,13 +96,6 @@ public class Recombination {
 
             pointer = pointer % otherParent.tour.length;
 
-//            if (!temp.contains(otherParent.tour[pointer])){
-//                if (otherParent.tour[pointer] != missingCity && otherParent.tour[pointer] != startEndCity){
-//                    temp.set(positionInOffspring, otherParent.tour[pointer]);
-//                    positionInOffspring++;
-//                    numElementsToCopy--;
-//                }
-//            }
             if ((!Arrays.asList(completedList.tour).contains(otherParent.tour[pointer])) && otherParent.tour[pointer] != startEndCity) {
                 completedList.tour[positionInOffspring] = otherParent.tour[pointer];
                 numElementsToCopy--;
@@ -101,7 +107,6 @@ public class Recombination {
                 positionInOffspring++;
             }
                 positionInOffspring = positionInOffspring % offspring.tour.length;
-
                 pointer++;
         }
         ArrayList<Integer> temp = new ArrayList<Integer> (Arrays.asList(completedList.tour));
@@ -111,6 +116,22 @@ public class Recombination {
 
         return completedList;
 
+    }
+
+    private Tour routeWithRandomMutation(Tour offspring) {
+        Random random = new Random();
+        double mutationChance = random.nextDouble();
+        if (mutationChance >= 0.7) {
+            int firstIndex = ThreadLocalRandom.current().nextInt(1, offspring.tour.length - 2);
+            int secondIndex = firstIndex;
+            while (firstIndex == secondIndex) {
+                    secondIndex = ThreadLocalRandom.current().nextInt(1, offspring.tour.length - 2);
+            }
+            int elementToBeSwapped = offspring.tour[firstIndex];
+            offspring.tour[firstIndex] = offspring.tour[secondIndex];
+            offspring.tour[secondIndex] = elementToBeSwapped;
+        }
+        return offspring;
     }
 
 
