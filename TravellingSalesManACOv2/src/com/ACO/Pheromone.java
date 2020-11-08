@@ -1,3 +1,5 @@
+package com.ACO;
+
 public class Pheromone {
 
     double pheromoneLevelForCityPair;
@@ -14,7 +16,13 @@ public class Pheromone {
         return 0.1;
     }
 
-    public void pheromoneDecay(int i, int j, double rateOfEvaporation) {
+    //t (i, j) (t + 1) = p * t (i, j) (t)
+    public void pheromoneDecay(double rateOfEvaporation) {
         pheromoneLevelForCityPair *= rateOfEvaporation;
+    }
+
+    //Pheromone for each city pair is increased by q / L where L is equal to tour length
+    public void updatePheromonesForRoute(int routeSize, double q) {
+        pheromoneLevelForCityPair *= q / routeSize;
     }
 }
