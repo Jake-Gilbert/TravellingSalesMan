@@ -25,7 +25,7 @@ public class Tour {
     public double getCostOfRoute(Map<Integer, City> cityMap) {
         double total = 0.0;
         for (int i = 0; i < tour.length - 1; i++) {
-            total += difference(cityMap, tour[i], tour[i+1]);
+                total += difference(cityMap, tour[i], tour[i+1]);
         }
         BigDecimal bd = new BigDecimal(total);
         bd = bd.round(new MathContext(3));
