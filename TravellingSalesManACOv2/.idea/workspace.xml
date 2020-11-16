@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b584d4bc-b4b4-427b-9658-a6bb5c57202f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ACO/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ACO/FileReaderClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/Recombination.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/out/production/EvolutioanryAlgorithmV2/Recombination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/Recombination.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EvolutioanryAlgorithmV2/src/Recombination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LocalSearchForTSP/out/production/LocalSearchForTSP/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LocalSearchForTSP/out/production/LocalSearchForTSP/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LocalSearchForTSP/out/production/LocalSearchForTSP/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LocalSearchForTSP/out/production/LocalSearchForTSP/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LocalSearchForTSP/src/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LocalSearchForTSP/src/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LocalSearchForTSP/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LocalSearchForTSP/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/Ant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/Pheromone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/Ant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pheromone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/Pheromone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/com/ACO/Ant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/com/ACO/Ant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/com/ACO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/com/ACO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/com/ACO/Pheromone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TravellingSalesManACOv2/com/ACO/Pheromone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ACO/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/Ant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ACO/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ACO/Pheromone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ACO/Pheromone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
       <recent name="C:\Users\Jake\Documents\repos\TravellingSalesMan\TravellingSalesManACOv2\out\production\TravellingSalesManACOv2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ACO.Main" />
       <module name="TravellingSalesManACOv2" />
@@ -75,7 +80,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -108,48 +112,75 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604843852143" />
-    <state width="2517" height="457" key="GridCell.Tab.0.bottom" timestamp="1604875757912">
+    <state width="2517" height="676" key="GridCell.Tab.0.bottom" timestamp="1605491518445">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="457" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
-    <state width="2517" height="457" key="GridCell.Tab.0.center" timestamp="1604875757912">
+    <state width="2517" height="676" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605491518445" />
+    <state width="2517" height="676" key="GridCell.Tab.0.center" timestamp="1605491518444">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="457" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
-    <state width="2517" height="457" key="GridCell.Tab.0.left" timestamp="1604875757912">
+    <state width="2517" height="676" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605491518444" />
+    <state width="2517" height="676" key="GridCell.Tab.0.left" timestamp="1605491518444">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="457" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
-    <state width="2517" height="457" key="GridCell.Tab.0.right" timestamp="1604875757912">
+    <state width="2517" height="676" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605491518444" />
+    <state width="2517" height="676" key="GridCell.Tab.0.right" timestamp="1605491518445">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="457" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604875757912" />
-    <state width="2517" height="500" key="GridCell.Tab.1.bottom" timestamp="1604875712614">
+    <state width="2517" height="676" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605491518445" />
+    <state width="2517" height="485" key="GridCell.Tab.1.bottom" timestamp="1605490772613">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="500" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
-    <state width="2517" height="500" key="GridCell.Tab.1.center" timestamp="1604875712614">
+    <state width="2517" height="485" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605490772613" />
+    <state width="2517" height="485" key="GridCell.Tab.1.center" timestamp="1605490772613">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="500" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
-    <state width="2517" height="500" key="GridCell.Tab.1.left" timestamp="1604875712614">
+    <state width="2517" height="485" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605490772613" />
+    <state width="2517" height="485" key="GridCell.Tab.1.left" timestamp="1605490772613">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="500" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
-    <state width="2517" height="500" key="GridCell.Tab.1.right" timestamp="1604875712614">
+    <state width="2517" height="485" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605490772613" />
+    <state width="2517" height="485" key="GridCell.Tab.1.right" timestamp="1605490772613">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="500" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604875712614" />
+    <state width="2517" height="485" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605490772613" />
     <state x="473" y="342" key="SettingsEditor" timestamp="1604816561455">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604816561455" />
+    <state x="510" y="627" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604938766291">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="510" y="627" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604938766291" />
+    <state x="790" y="436" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605489695919">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="790" y="436" width="979" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400" timestamp="1605489695919" />
     <state x="662" y="320" key="new project wizard" timestamp="1604843853262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="662" y="320" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1604843853262" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605489541955">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1605489541955" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="52" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.Double" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TravellingSalesManACOv2$Main.ic" NAME="Main Coverage Results" MODIFIED="1604816572437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/TravellingSalesManACOv2$Main.ic" NAME="Main Coverage Results" MODIFIED="1605353288439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

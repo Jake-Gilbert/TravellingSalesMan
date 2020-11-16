@@ -1,51 +1,59 @@
 package com.ACO;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import javax.print.DocFlavor;
+import java.util.*;
 
 public class Main {
-    final static Map<Integer, City> GRAPH = initialiseGraph();
-    static Pheromone[][] pheromoneArray;
+    private static final Map<Integer, City> GRAPH = initialiseGraph();
+    static Pheromone pheromone;
     public static void main(String[] args) {
-            int tourLength = GRAPH.size();
-        //Suggestion: put it all in one package
-            pheromoneArray = initialisePheromoneArray(4);
-            int a = 0;
-            ArrayList<Ant> swarm = new ArrayList<>();
-            while (a <= 3) {
-                Ant ant = new Ant(GRAPH, tourLength);
-                swarm.add(ant);
-                System.out.println(swarm.get(a).tour.toString());
-                System.out.println(swarm.get(a).getCostOfRoute(GRAPH));
-                a++;
-            }
-        System.out.println();
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter the tour length for the ants to construct");
+            int tourLength = scanner.nextInt();
+            pheromone = new Pheromone(tourLength, 0.015);
+           // pheromone.pheromoneDecay(0.5);
+             System.out.println("Enter pheromoneDecay");
+             double pheromoneDecay = scanner.nextDouble();
+            runACO(tourLength, pheromoneDecay, 100.0);
+
+
 
     }
-    // alpha = 1.0 beta = 5.0 parameters of program
-    //t (i, j) pheremone at edge i -> j
-    //n i t (t) - heuristic information about edge i -> j
+    //Suggestion: put it all in one package
+    //Run the Ant Colony Optimisation process:
+    private static void runACO(int tourLength, double pheromoneDecay, double q){
+        int a = 0;
+        int b = 0;
+        int swarmSize = 100;
+        Ant[] swarm = new Ant[swarmSize];
+        while (a < 100) {
+            for (int i = 0; i < swarmSize - 1; i++) {
+                Ant ant = new Ant(GRAPH, tourLength, pheromone);
+                swarm[i]  = ant;
+            }
+            getBestAntOfGeneration(swarm);
+            pheromone.pheromoneDecay(pheromoneDecay);
+            pheromone.updatePheromonesForRoute(swarm, q);
+            a++;
+        }
+    }
 
-
-    private static Pheromone[][] initialisePheromoneArray(int tourLength) {
-        Pheromone[][] temporaryArray = new Pheromone[tourLength][tourLength];
-        for (int i = 0; i <= tourLength - 1; i++) {
-            for (int j = 0; j <= tourLength - 1; j++) {
-                temporaryArray[i][j] = new Pheromone(i, j);
+    private static void getBestAntOfGeneration(Ant[] swarm) {
+        Ant bestAnt = swarm[0];
+        for (Ant ant : swarm) {
+            if (ant != null) {
+                if (ant.getCostOfRoute(ant.tour) < bestAnt.getCostOfRoute(bestAnt.tour)) {
+                    bestAnt = ant;
+                }
             }
         }
-        return temporaryArray;
+        System.out.println("Best route of this generation is:");
+        System.out.println(Arrays.toString(bestAnt.tour) + " cost: " + bestAnt.getCostOfRoute(bestAnt.tour));
     }
 
-
     private static Map<Integer, City> initialiseGraph() {
-        HashMap<Integer, City> graph = new HashMap<>();
-        graph.put(0, new City(38.24,	20.42));
-        graph.put(1, new City(39.57,	26.15));
-        graph.put(2, new City(40.56,	25.32));
-        graph.put(3, new City(36.26,	23.12));
-        return graph;
+        FileReaderClass fileReaderClass = new FileReaderClass();
+        return fileReaderClass.populateMap();
     }
 
 
